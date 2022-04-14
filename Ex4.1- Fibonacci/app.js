@@ -2,6 +2,21 @@
 The function gets a starting value (0 or 1) and an integer n (which is the order number of the element).
 */
 
+const fibonacciWithLoop = (startVal, order) => {
+    const seriesArr = [startVal, 1];
+    for (let i = 0; i < order - 2; i++) {
+        seriesArr.push(seriesArr[i] + seriesArr[i + 1]);
+    }
+    return seriesArr[order - 1];
+};
+
+console.log(fibonacciWithLoop(0, 5)); //3
+console.log(fibonacciWithLoop(0, 8)); //13
+console.log(fibonacciWithLoop(1, 5)); //5
+console.log(fibonacciWithLoop(1, 1)); //1
+console.log(fibonacciWithLoop(0, 1)); //0
+console.log(fibonacciWithLoop(0, 10)); //34
+
 // Runtime: O(2^n)
 const fibonacci = (startVal, order) => {
     if (order === 1 || order === 0) {
