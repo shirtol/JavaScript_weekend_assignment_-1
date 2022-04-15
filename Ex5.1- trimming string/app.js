@@ -7,7 +7,7 @@ The string length is equal or greater than 2.
 const trimString = (string) => {
     let trimmedString = "";
     for (let i = 1; i < string.length - 1; i++) {
-        trimmedString += string.charAt(i);
+        trimmedString += string[i];
     }
     return trimmedString;
 };
