@@ -1,38 +1,37 @@
-/* Works for all the cases (includes dashes or underscore at the beginning 
-or at the end) */
+/*
+Assumptions:
+? Input contains only dashes or underscore between words.
+*/
+
+/*First option:*/
 const toCamelCase = (str) => {
-    let camelCaseStr = str.charAt(0);
-    for (let i = 1; i < str.length - 1; i++) {
-        if (str.charAt(i) === "-" || str.charAt(i) === "_") {
-            camelCaseStr += str.charAt(i + 1).toUpperCase();
+    let camelCaseStr = "";
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === "-" || str[i] === "_") {
+            camelCaseStr += str[i + 1].toUpperCase();
             i++;
         } else {
-            camelCaseStr += str.charAt(i);
+            camelCaseStr += str[i];
         }
     }
-    camelCaseStr += str.charAt(str.length - 1);
     return camelCaseStr;
 };
 
 console.log(toCamelCase("the-stealth-warrior"));
 console.log(toCamelCase("The_Stealth_Warrior"));
-console.log(toCamelCase("The_Stealth_Warrior-"));
-console.log(toCamelCase("-The_Stealth_Warrior-"));
 
-/* Using array of words: works only when the input is valid (doesn't include dash or underscore at the 
-beginning or at the end of the string) */
+/* Using array of words: */
 const toCamelCase2 = (str) => {
     let wordsArr = [];
     let camelCaseStr = "";
-    if (str.includes("-", 1)) {
+    if (str.includes("-")) {
         wordsArr = str.split("-");
-    } else if (str.includes("_", 1)) {
+    } else if (str.includes("_")) {
         wordsArr = str.split("_");
     }
     camelCaseStr += wordsArr[0];
     for (let i = 1; i < wordsArr.length; i++) {
-        camelCaseStr +=
-            wordsArr[i].charAt(0).toUpperCase() + wordsArr[i].slice(1);
+        camelCaseStr += wordsArr[i][0].toUpperCase() + wordsArr[i].slice(1);
     }
     return camelCaseStr;
 };
