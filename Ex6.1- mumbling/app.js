@@ -20,8 +20,4 @@ const accum = (str) => {
     return accumArr.join("-");
 };
 
-console.log(accum("abcd"));
-console.log(accum("RqaEzty"));
-console.log(accum("cwAt"));
-
 module.exports = accum;

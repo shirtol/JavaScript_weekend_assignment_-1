@@ -17,9 +17,6 @@ const toCamelCase = (str) => {
     return camelCaseStr;
 };
 
-console.log(toCamelCase("the-stealth-warrior"));
-console.log(toCamelCase("The_Stealth_Warrior"));
-
 /* Using array of words: */
 const toCamelCase2 = (str) => {
     let wordsArr = [];
@@ -35,9 +32,6 @@ const toCamelCase2 = (str) => {
     }
     return camelCaseStr;
 };
-
-console.log(toCamelCase2("The_Stealth_Warrior"));
-console.log(toCamelCase2("the-stealth-warrior"));
 
 module.exports = {
     toCamelCase,

@@ -26,12 +26,4 @@ const tribonacci = (signatureArr, order) => {
     return tribonacciSeriesArr;
 };
 
-console.log(tribonacci([1, 1, 1], 5));
-console.log(tribonacci([1, 1, 1], 8));
-console.log(tribonacci([0, 0, 1], 8));
-console.log(tribonacci([1, 2, 3], 6));
-console.log(tribonacci([1, 2, 3], 0));
-console.log(tribonacci([1, 2, 3], 1));
-console.log(tribonacci([1, 2, 3], 2));
-
 module.exports = tribonacci;

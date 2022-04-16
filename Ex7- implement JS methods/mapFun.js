@@ -21,6 +21,4 @@ const myMap1 = (callback, array) => {
     return newArr;
 };
 
-console.log(myMap1((el) => el * 2, [1, 2, 3, 4, 5]));
-
 module.exports = myMap1;

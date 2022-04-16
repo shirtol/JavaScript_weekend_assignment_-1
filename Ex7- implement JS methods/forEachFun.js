@@ -26,6 +26,4 @@ const someFun1 = (array) => {
     return newArr;
 };
 
-console.log(someFun1([1, 2, 3, 4]));
-
 module.exports = myForEach1;

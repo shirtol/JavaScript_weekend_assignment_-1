@@ -23,6 +23,4 @@ const myFilter1 = (callback, array) => {
     return filteredArr;
 };
 
-console.log(myFilter1((el) => el > 5, [1, 2, 3, 4, 5, 6, 7, 8]));
-
 module.exports = myFilter1;

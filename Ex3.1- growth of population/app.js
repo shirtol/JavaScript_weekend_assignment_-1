@@ -31,10 +31,4 @@ const nbYear = (
     return numOfYears;
 };
 
-console.log(nbYear(1500, 5, 100, 5000));
-console.log(nbYear(1500, null, 100, 5000));
-console.log(nbYear(1500, null, -100, 5000));
-console.log(nbYear(1500, 5, -100, 5000));
-console.log(nbYear(1500000, 2.5, 10000, 2000000));
-
 module.exports = nbYear;

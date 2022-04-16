@@ -12,9 +12,4 @@ const findUnique = (arr) => {
     return parseFloat(res);
 };
 
-console.log(findUnique([1, 1, 1, 2, 1, 1]));
-console.log(findUnique([0, 0, 0.55, 0, 0]));
-console.log(findUnique([1, 0, 0, 0, 0]));
-console.log(findUnique([0, 0, 0, 0, 3]));
-
 module.exports = findUnique;

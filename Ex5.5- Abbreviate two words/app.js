@@ -10,8 +10,4 @@ const abbreviateName = (str) => {
     );
 };
 
-console.log(abbreviateName("Sam Harris"));
-console.log(abbreviateName("Patrick Feeney"));
-console.log(abbreviateName("shir toledano"));
-
 module.exports = abbreviateName;
