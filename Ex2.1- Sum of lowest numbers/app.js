@@ -34,13 +34,6 @@ const sumTwoLowest2 = (numArr) => {
     return numArr[0] + numArr[1];
 };
 
-const myArr = [19, 5, 42, 2, 77];
-const myArr2 = [10, 343445353, 3453445, 3453545353453];
-console.log(sumTwoLowest(myArr));
-console.log(sumTwoLowest(myArr2));
-console.log(sumTwoLowest2(myArr));
-console.log(sumTwoLowest2(myArr2));
-
 module.exports = {
     sumTwoLowest: sumTwoLowest,
     sumTwoLowest2: sumTwoLowest2,
