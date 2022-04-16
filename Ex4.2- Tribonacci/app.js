@@ -33,3 +33,5 @@ console.log(tribonacci([1, 2, 3], 6));
 console.log(tribonacci([1, 2, 3], 0));
 console.log(tribonacci([1, 2, 3], 1));
 console.log(tribonacci([1, 2, 3], 2));
+
+module.exports = tribonacci;
