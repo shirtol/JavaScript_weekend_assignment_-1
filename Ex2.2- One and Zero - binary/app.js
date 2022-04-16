@@ -24,7 +24,18 @@ console.log(convertBinaryToInt(testing6));
 console.log(convertBinaryToInt(testing7));
 console.log(convertBinaryToInt(testing8));
 
-module.exports = convertBinaryToInt;
+const convertBinaryToInt2 = (binaryArr) => {
+    let intVal = 0;
+    binaryArr
+        .slice()
+        .reverse()
+        .forEach((element, idx) => {
+            intVal += element * 2 ** idx;
+        });
+    return intVal;
+};
 
-//TODO: Using forEach:
-const convertBinaryToInt2 = (binaryArr) => {};
+module.exports = {
+    convertBinaryToInt: convertBinaryToInt,
+    convertBinaryToInt2: convertBinaryToInt2,
+};
