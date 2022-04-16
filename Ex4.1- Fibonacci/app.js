@@ -58,3 +58,9 @@ console.log(fibonacciImproved(1, 5, {})); //5
 console.log(fibonacciImproved(1, 1, {})); //1
 console.log(fibonacciImproved(0, 1, {})); //0
 console.log(fibonacciImproved(0, 10, {})); //34
+
+module.exports = {
+    fibonacciWithLoop: fibonacciWithLoop,
+    fibonacci: fibonacci,
+    fibonacciImproved: fibonacciImproved,
+};
