@@ -7,5 +7,6 @@ describe("Ex2.6- Years and Centuries test", () => {
         assert.strictEqual(centuryFromYear(1900), 19);
         assert.strictEqual(centuryFromYear(1601), 17);
         assert.strictEqual(centuryFromYear(2000), 20);
+        assert.strictEqual(centuryFromYear(1), 1);
     });
 });

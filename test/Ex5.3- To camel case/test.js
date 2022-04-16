@@ -13,6 +13,14 @@ describe("Ex5.3- To camel case test", () => {
             toCamelCase("the-stealth-warrior"),
             "theStealthWarrior"
         );
+        assert.strictEqual(
+            toCamelCase("thestealthwarrior"),
+            "thestealthwarrior"
+        );
+        assert.strictEqual(
+            toCamelCase("Thestealthwarrior"),
+            "Thestealthwarrior"
+        );
     });
     it("Ex5.3- To camel case2 tests", () => {
         assert.strictEqual(
@@ -22,6 +30,14 @@ describe("Ex5.3- To camel case test", () => {
         assert.strictEqual(
             toCamelCase2("the-stealth-warrior"),
             "theStealthWarrior"
+        );
+        assert.strictEqual(
+            toCamelCase2("thestealthwarrior"),
+            "thestealthwarrior"
+        );
+        assert.strictEqual(
+            toCamelCase2("Thestealthwarrior"),
+            "Thestealthwarrior"
         );
     });
 });

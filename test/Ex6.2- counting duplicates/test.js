@@ -10,5 +10,7 @@ describe("Ex6.2- counting duplicates test", () => {
         assert.strictEqual(getNumOfDuplicates("Indivisibilities"), 2);
         assert.strictEqual(getNumOfDuplicates("aA11"), 2);
         assert.strictEqual(getNumOfDuplicates("ABBA"), 2);
+        assert.strictEqual(getNumOfDuplicates(""), 0);
+        assert.strictEqual(getNumOfDuplicates("a"), 0);
     });
 });

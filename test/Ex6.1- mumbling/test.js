@@ -9,5 +9,8 @@ describe("Ex6.1- mumbling test", () => {
             "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
         );
         assert.strictEqual(accum("cwAt"), "C-Ww-Aaa-Tttt");
+        assert.strictEqual(accum("a"), "A");
+        assert.strictEqual(accum("A"), "A");
+        assert.strictEqual(accum(""), "");
     });
 });

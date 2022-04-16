@@ -25,6 +25,8 @@ const toCamelCase2 = (str) => {
         wordsArr = str.split("-");
     } else if (str.includes("_")) {
         wordsArr = str.split("_");
+    } else {
+        return str;
     }
     camelCaseStr += wordsArr[0];
     for (let i = 1; i < wordsArr.length; i++) {

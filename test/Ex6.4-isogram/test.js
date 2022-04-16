@@ -6,5 +6,8 @@ describe("Ex6.4- isogram test", () => {
         assert.strictEqual(isIsogram("Dermatoglyphics"), true);
         assert.strictEqual(isIsogram("aba"), false);
         assert.strictEqual(isIsogram(""), true);
+        assert.strictEqual(isIsogram("a"), true);
+        assert.strictEqual(isIsogram("A"), true);
+        assert.strictEqual(isIsogram("Aa"), false);
     });
 });

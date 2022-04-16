@@ -9,5 +9,8 @@ describe("Ex5.4- To weird case test", () => {
             "WeIrD StRiNg CaSe"
         );
         assert.strictEqual(toWeirdCase("STRING CASE"), "StRiNg CaSe");
+        assert.strictEqual(toWeirdCase("shIrTol"), "ShIrToL");
+        assert.strictEqual(toWeirdCase("a"), "A");
+        assert.strictEqual(toWeirdCase("A"), "A");
     });
 });

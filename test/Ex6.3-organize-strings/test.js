@@ -14,5 +14,10 @@ describe("Ex6.3- organize strings test", () => {
             ),
             "abcdefghijklmnopqrstuvwxyz"
         );
+        assert.strictEqual(organizeStr("abc", "def"), "abcdef");
+        assert.strictEqual(organizeStr("abc", "abc"), "abc");
+        assert.strictEqual(organizeStr("", "abc"), "abc");
+        assert.strictEqual(organizeStr("abc", ""), "abc");
+        assert.strictEqual(organizeStr("", ""), "");
     });
 });
