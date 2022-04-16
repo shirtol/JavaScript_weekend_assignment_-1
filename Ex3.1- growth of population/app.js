@@ -24,6 +24,7 @@ const nbYear = (
         }
         populationStart +=
             populationStart * (percent / 100) + numPeopleTurnover;
+        populationStart = Math.floor(populationStart);
 
         numOfYears++;
     }
