@@ -10,13 +10,6 @@ const fibonacciWithLoop = (startVal, order) => {
     return seriesArr[order - 1];
 };
 
-console.log(fibonacciWithLoop(0, 5)); //3
-console.log(fibonacciWithLoop(0, 8)); //13
-console.log(fibonacciWithLoop(1, 5)); //5
-console.log(fibonacciWithLoop(1, 1)); //1
-console.log(fibonacciWithLoop(0, 1)); //0
-console.log(fibonacciWithLoop(0, 10)); //34
-
 // Runtime: O(2^n)
 const fibonacci = (startVal, order) => {
     if (order === 1 || order === 0) {
@@ -27,13 +20,6 @@ const fibonacci = (startVal, order) => {
     }
     return fibonacci(startVal, order - 1) + fibonacci(startVal, order - 2);
 };
-
-console.log(fibonacci(0, 5)); //3
-console.log(fibonacci(0, 8)); //13
-console.log(fibonacci(1, 5)); //5
-console.log(fibonacci(1, 1)); //1
-console.log(fibonacci(0, 1)); //0
-console.log(fibonacci(0, 10)); //34
 
 // Better performance (runtime: O(n))
 const fibonacciImproved = (startVal, order, memoObj) => {
@@ -51,13 +37,6 @@ const fibonacciImproved = (startVal, order, memoObj) => {
         fibonacciImproved(startVal, order - 2, memoObj);
     return memoObj[order];
 };
-
-console.log(fibonacciImproved(0, 5, {})); //3
-console.log(fibonacciImproved(0, 8, {})); //13
-console.log(fibonacciImproved(1, 5, {})); //5
-console.log(fibonacciImproved(1, 1, {})); //1
-console.log(fibonacciImproved(0, 1, {})); //0
-console.log(fibonacciImproved(0, 10, {})); //34
 
 module.exports = {
     fibonacciWithLoop: fibonacciWithLoop,
