@@ -20,3 +20,5 @@ console.log(getShortestWord("hi shir my name is daniel"));
 console.log(getShortestWord("I am going to the bank today"));
 console.log(getShortestWord("I'm currently enrolled at appleseeds academy"));
 console.log(getShortestWord("Shalalalalala"));
+
+module.exports = getShortestWord;

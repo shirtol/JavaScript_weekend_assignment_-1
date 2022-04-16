@@ -26,3 +26,5 @@ const toWeirdCase = (string) => {
 console.log(toWeirdCase("String"));
 console.log(toWeirdCase("Weird string case"));
 console.log(toWeirdCase("STRING CASE"));
+
+module.exports = toWeirdCase;

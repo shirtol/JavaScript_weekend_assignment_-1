@@ -38,3 +38,8 @@ const toCamelCase2 = (str) => {
 
 console.log(toCamelCase2("The_Stealth_Warrior"));
 console.log(toCamelCase2("the-stealth-warrior"));
+
+module.exports = {
+    toCamelCase,
+    toCamelCase2,
+};

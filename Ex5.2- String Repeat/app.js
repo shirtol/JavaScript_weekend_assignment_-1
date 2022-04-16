@@ -10,3 +10,5 @@ console.log(repeatStr(6, "|"));
 console.log(repeatStr(5, "Hello"));
 console.log(repeatStr(0, "Hello"));
 console.log(repeatStr(1, "Hello"));
+
+module.exports = repeatStr;
