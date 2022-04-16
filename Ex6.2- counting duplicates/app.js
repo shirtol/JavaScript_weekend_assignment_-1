@@ -29,3 +29,5 @@ console.log(getNumOfDuplicates("indivisibility"));
 console.log(getNumOfDuplicates("Indivisibilities"));
 console.log(getNumOfDuplicates("aA11"));
 console.log(getNumOfDuplicates("ABBA"));
+
+module.exports = getNumOfDuplicates;

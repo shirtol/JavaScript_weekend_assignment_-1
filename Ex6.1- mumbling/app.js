@@ -23,3 +23,5 @@ const accum = (str) => {
 console.log(accum("abcd"));
 console.log(accum("RqaEzty"));
 console.log(accum("cwAt"));
+
+module.exports = accum;

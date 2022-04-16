@@ -23,3 +23,5 @@ console.log(organizeStr("xyaabbbccccdefww", "xxxxyyyyabklmopq"));
 console.log(
     organizeStr("abcdefghijklmnopqrstuvwxyz", "abcdefghijklmnopqrstuvwxyz")
 );
+
+module.exports = organizeStr;

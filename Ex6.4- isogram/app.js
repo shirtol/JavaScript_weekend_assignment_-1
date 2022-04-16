@@ -21,3 +21,5 @@ console.log(isIsogram("Dermatoglyphics"));
 console.log(isIsogram("aba"));
 console.log(isIsogram("moOse"));
 console.log(isIsogram(""));
+
+module.exports = isIsogram;

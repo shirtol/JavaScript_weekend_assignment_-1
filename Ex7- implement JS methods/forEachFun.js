@@ -27,3 +27,5 @@ const someFun1 = (array) => {
 };
 
 console.log(someFun1([1, 2, 3, 4]));
+
+module.exports = myForEach1;
