@@ -6,3 +6,5 @@ const findNextSquare = (num) => {
 console.log(findNextSquare(121));
 console.log(findNextSquare(625));
 console.log(findNextSquare(114));
+
+module.exports = findNextSquare;
