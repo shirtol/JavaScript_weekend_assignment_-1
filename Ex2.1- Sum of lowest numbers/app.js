@@ -40,3 +40,8 @@ console.log(sumTwoLowest(myArr));
 console.log(sumTwoLowest(myArr2));
 console.log(sumTwoLowest2(myArr));
 console.log(sumTwoLowest2(myArr2));
+
+module.exports = {
+    sumTwoLowest: sumTwoLowest,
+    sumTwoLowest2: sumTwoLowest2,
+};
