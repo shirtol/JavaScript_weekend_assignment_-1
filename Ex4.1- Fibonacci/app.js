@@ -10,7 +10,7 @@ const fibonacciWithLoop = (startVal, order) => {
     return seriesArr[order - 1];
 };
 
-// Runtime: O(2^n)
+// Runtime complexity: O(2^n)
 const fibonacci = (startVal, order) => {
     if (order === 1 || order === 0) {
         return startVal;
@@ -21,7 +21,7 @@ const fibonacci = (startVal, order) => {
     return fibonacci(startVal, order - 1) + fibonacci(startVal, order - 2);
 };
 
-// Better performance (runtime: O(n))
+// Better performance (Runtime complexity: O(n))
 const fibonacciImproved = (startVal, order, memoObj) => {
     if (order === 1 || order === 0) {
         memoObj[order] = startVal;

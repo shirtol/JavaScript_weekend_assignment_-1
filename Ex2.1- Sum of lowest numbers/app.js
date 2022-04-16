@@ -8,7 +8,7 @@ Assumptions:
 
 /* 
 First approach: using splice. 
-Run time: O(n)
+Runtime complexity: O(n)
 disadvantages:  need to copy the array (in order not to change the original array) and the space 
 complexity increase by n.*/
 const sumTwoLowest = (numArr) => {
@@ -26,7 +26,7 @@ const sumTwoLowest = (numArr) => {
 
 /* 
 Second approach: using sort
-RunTime: O(nlogn), worse performance than the first approach (disadvantage), 
+Runtime complexity: O(nlogn), worse performance than the first approach (disadvantage), 
 but here we don't need to use more space.
  */
 const sumTwoLowest2 = (numArr) => {
