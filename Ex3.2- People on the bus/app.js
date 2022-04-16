@@ -10,4 +10,19 @@ const numOfPeopleInBus = (busArr) => {
     return numOfPeopleIn;
 };
 
-module.exports = numOfPeopleInBus;
+/* Using forEach: I like the other approach more than this one because the iteration stops when numOfPeopleIn get 
+below zero (But they have the same runtime complexity: O(n)))*/
+const numOfPeopleInBus2 = (busArr) => {
+    let numOfPeopleIn = 0;
+    busArr.forEach((station) => {
+        if (numOfPeopleIn >= 0) {
+            numOfPeopleIn += station[0] - station[1];
+        }
+    });
+    return numOfPeopleIn >= 0 ? numOfPeopleIn : "invalid input";
+};
+
+module.exports = {
+    numOfPeopleInBus,
+    numOfPeopleInBus2,
+};
