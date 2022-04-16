@@ -16,3 +16,5 @@ console.log(maskify("1"));
 console.log(maskify(""));
 console.log(maskify("Skippy"));
 console.log(maskify("Nananananananananananananananana Batman!"));
+
+module.exports = maskify;
