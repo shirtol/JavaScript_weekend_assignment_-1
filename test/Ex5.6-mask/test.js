@@ -1,8 +1,8 @@
 const assert = require("chai").assert;
 const maskify = require("../../Ex5.6- mask/app");
 
-describe("maskify test", () => {
-    it("testing for fixed tests", () => {
+describe("Ex5.6- mask test", () => {
+    it("Ex5.6- mask tests", () => {
         assert.strictEqual(maskify("4556364607935616"), "############5616");
         assert.strictEqual(maskify("64607935616"), "#######5616");
         assert.strictEqual(maskify("1"), "1");

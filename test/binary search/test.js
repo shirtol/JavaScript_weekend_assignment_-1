@@ -2,7 +2,7 @@ const assert = require("chai").assert;
 const binarySearch = require("../../binary search/app");
 
 describe("binary search test", () => {
-    it("testing for binary search tests", () => {
+    it("binary search tests", () => {
         assert.strictEqual(
             binarySearch([1, 3, 5, 7, 8, 9], 5),
             "Element found!"

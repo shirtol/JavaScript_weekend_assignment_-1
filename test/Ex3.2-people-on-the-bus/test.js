@@ -3,7 +3,7 @@ const peopleOnTheBusEx = require("../../Ex3.2- People on the bus/app");
 const numOfPeopleInBus = peopleOnTheBusEx.numOfPeopleInBus;
 const numOfPeopleInBus2 = peopleOnTheBusEx.numOfPeopleInBus2;
 
-describe("People on the bus exercise test", () => {
+describe("Ex3.2- People on the bus test", () => {
     const arrForTest1 = [
         [2, 0],
         [3, 2],
@@ -24,13 +24,13 @@ describe("People on the bus exercise test", () => {
         [3, 2],
         [2, 8],
     ];
-    it("testing for people on the bus", () => {
+    it("Ex3.2- People on the bus tests", () => {
         assert.strictEqual(numOfPeopleInBus(arrForTest1), 2);
         assert.strictEqual(numOfPeopleInBus(arrForTest2), "invalid input");
         assert.strictEqual(numOfPeopleInBus(arrForTest3), 0);
         assert.strictEqual(numOfPeopleInBus(arrForTest4), 0);
     });
-    it("testing for people on the bus using forEach", () => {
+    it("Ex3.2- People on the bus using forEach tests", () => {
         assert.strictEqual(numOfPeopleInBus2(arrForTest1), 2);
         assert.strictEqual(numOfPeopleInBus2(arrForTest2), "invalid input");
         assert.strictEqual(numOfPeopleInBus2(arrForTest3), 0);

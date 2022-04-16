@@ -1,8 +1,8 @@
 const assert = require("chai").assert;
 const centuryFromYear = require("../../Ex2.6- Years and Centuries/app");
 
-describe("Years and centuries test", () => {
-    it("Testing for years and centuries", () => {
+describe("Ex2.6- Years and Centuries test", () => {
+    it("Ex2.6- Years and Centuries tests", () => {
         assert.strictEqual(centuryFromYear(1705), 18);
         assert.strictEqual(centuryFromYear(1900), 19);
         assert.strictEqual(centuryFromYear(1601), 17);

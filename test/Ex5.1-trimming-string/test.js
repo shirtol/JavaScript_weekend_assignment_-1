@@ -3,8 +3,8 @@ const trimStrEx = require("../../Ex5.1- trimming string/app");
 const trimString = trimStrEx.trimString;
 const trimStringWithSlice = trimStrEx.trimStringWithSlice;
 
-describe("Trimming string exercise test", () => {
-    it("testing for trimming string using for loop", () => {
+describe("Ex5.1- trimming string test", () => {
+    it("Ex5.1- trimming string using for loop tests", () => {
         assert.strictEqual(trimString("shir"), "hi");
         assert.strictEqual(trimString("da"), "");
         assert.strictEqual(trimString("daniel"), "anie");
@@ -12,7 +12,7 @@ describe("Trimming string exercise test", () => {
         assert.strictEqual(trimString("sssh"), "ss");
         assert.strictEqual(trimString("sbh"), "b");
     });
-    it("testing for trimming string using slice", () => {
+    it("Ex5.1- trimming string using slice tests", () => {
         assert.strictEqual(trimStringWithSlice("shir"), "hi");
         assert.strictEqual(trimStringWithSlice("da"), "");
         assert.strictEqual(trimStringWithSlice("daniel"), "anie");

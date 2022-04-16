@@ -4,8 +4,8 @@ const fibonacciWithLoop = fibonacciEx.fibonacciWithLoop;
 const fibonacci = fibonacciEx.fibonacci;
 const fibonacciImproved = fibonacciEx.fibonacciImproved;
 
-describe("fibonacci tests", () => {
-    it("fibonacci with loop", () => {
+describe("Ex4.1- Fibonacci test", () => {
+    it("Ex4.1- Fibonacci with loop tests", () => {
         assert.strictEqual(fibonacciWithLoop(0, 5), 3);
         assert.strictEqual(fibonacciWithLoop(0, 8), 13);
         assert.strictEqual(fibonacciWithLoop(1, 5), 5);
@@ -13,7 +13,7 @@ describe("fibonacci tests", () => {
         assert.strictEqual(fibonacciWithLoop(0, 1), 0);
         assert.strictEqual(fibonacciWithLoop(0, 10), 34);
     });
-    it("fibonacci recursive", () => {
+    it("Ex4.1- Fibonacci recursive tests", () => {
         assert.strictEqual(fibonacci(0, 5), 3);
         assert.strictEqual(fibonacci(0, 8), 13);
         assert.strictEqual(fibonacci(1, 5), 5);
@@ -21,7 +21,7 @@ describe("fibonacci tests", () => {
         assert.strictEqual(fibonacci(0, 1), 0);
         assert.strictEqual(fibonacci(0, 10), 34);
     });
-    it("fibonacci recursive memoized", () => {
+    it("Ex4.1- Fibonacci recursive memoized tests", () => {
         assert.strictEqual(fibonacciImproved(0, 5, {}), 3);
         assert.strictEqual(fibonacciImproved(0, 8, {}), 13);
         assert.strictEqual(fibonacciImproved(1, 5, {}), 5);
