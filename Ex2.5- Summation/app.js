@@ -6,6 +6,4 @@ const summation = (num) => {
     return sum;
 };
 
-console.log(summation(2));
-console.log(summation(8));
-console.log(summation(1));
+module.exports = summation;
