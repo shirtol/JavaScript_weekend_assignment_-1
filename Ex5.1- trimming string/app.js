@@ -12,13 +12,6 @@ const trimString = (string) => {
     return trimmedString;
 };
 
-console.log(trimString("shir"));
-console.log(trimString("da"));
-console.log(trimString("daniel"));
-console.log(trimString("1234"));
-console.log(trimString("sssh"));
-console.log(trimString("sbh"));
-
 // With slice:
 const trimStringWithSlice = (string) =>
     string
@@ -26,9 +19,7 @@ const trimStringWithSlice = (string) =>
         .slice(1, string.length - 1)
         .join("");
 
-console.log(trimStringWithSlice("shir"));
-console.log(trimStringWithSlice("da"));
-console.log(trimStringWithSlice("daniel"));
-console.log(trimStringWithSlice("1234"));
-console.log(trimStringWithSlice("sssh"));
-console.log(trimStringWithSlice("sbh"));
+module.exports = {
+    trimString,
+    trimStringWithSlice,
+};
