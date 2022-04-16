@@ -15,7 +15,4 @@ const binarySearch = (arr, x) => {
     return "Element not found!";
 };
 
-console.log(binarySearch([1, 3, 5, 7, 8, 9], 5));
-console.log(binarySearch([1, 3, 5, 7, 8, 9], 6));
-
 module.exports = binarySearch;
