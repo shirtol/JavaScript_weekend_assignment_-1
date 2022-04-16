@@ -23,3 +23,6 @@ console.log(convertBinaryToInt(testing5));
 console.log(convertBinaryToInt(testing6));
 console.log(convertBinaryToInt(testing7));
 console.log(convertBinaryToInt(testing8));
+
+//TODO: Using forEach:
+const convertBinaryToInt2 = (binaryArr) => {};
