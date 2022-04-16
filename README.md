@@ -66,7 +66,14 @@ During this task I also had to solve some algorithmic challanges, such as binary
 
 -   JS
 
-### Testing Libraries:
+### Testing:
 
 -   mocha
 -   chai
+-   VS code mocha test explorer
+
+## Instructions:
+
+-   In order to run each exercise: In the command line (from the exercise folder) run `node *fileName*.js`
+-   In order to run all tests: In the command line (from the main repo folder) run `npm test`
+-   Note: if you want to run each test separately use [mocha test explorer extension](https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-mocha-test-adapter).
